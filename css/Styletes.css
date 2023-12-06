@@ -1,0 +1,444 @@
+:root {
+    --primary:#252D59;
+    --secondary: #64A0A5;
+    --tertiary : #86C894;
+    --black: #454545;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Duru Sans', sans-serif;
+    background-color: var(--primary);
+    color: #fff;
+    min-height: 100%;
+    width: 100%;
+    background-image: url(../img/patternbg.png);
+}
+
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 4%;
+    position: fixed;
+    top: 1rem;
+    left: 3rem;
+    right: 3rem;
+    background-color: var(--secondary);
+    z-index: 999999;
+    border-radius: 1rem;
+    height: 4rem;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin: 0.5rem;
+    padding-bottom: 1.5rem;
+    text-decoration: none;
+}
+
+.navbar .navbar-menu a {
+    align-items: end;
+    color: #fff;
+    display: inline-block;
+    font-size: 1rem;
+    font-family: 'Duru Sans', sans-serif;
+    font-weight: 800;
+    margin: 1.2rem;
+    padding-bottom: 1.2rem;
+    text-decoration: none;
+}
+
+.navbar .navbar-menu a:hover {
+    color: var(--primary);
+}
+
+.navbar .navbar-menu a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.2rem solid var(--primary);
+    transform: scaleX(0);
+}
+
+.navbar .navbar-menu a:hover::after {
+    transform: scaleX(0.5);
+    transition: 0.2s;
+}
+
+
+/* Hero */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(../img/rate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: grid;
+}
+
+.hero::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 28%;
+    bottom: 0;
+    background: linear-gradient(0deg,rgba(38, 45, 90,1 )1%, rgba(255, 255, 255, 0) 35%);
+}
+
+.hero .content h1 {
+    text-shadow: 2px 2px 4px var(--black);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    padding-top: 18rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hero .content p {
+    text-shadow: 2px 2px 4px var(--black);
+    padding: 0.8rem 8%;
+    font-family: 'Duru Sans', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+/* hars */
+.hars{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--quaternary);
+    font-style: italic;
+}
+.deschars{
+    padding-top: 1rem;
+    font-family: 'Duru Sans', sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+span{
+    color: var(--tertiary);
+    font-weight: 900;
+}
+
+/* judul tes */
+.desctes{
+    text-align: justify;
+    padding-top: 4rem;
+    font-family: 'Duru Sans', sans-serif;
+    font-size: 1.2rem;
+    padding-right: 5rem;
+}
+.judultes{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--quaternary);
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* pertanyaan */
+.judulquiz{
+    padding-top: 2em;
+    padding-bottom: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.quiz{
+    width: 60rem;
+    border-radius: 1rem;
+    background-color: #FF9A3D;
+}
+.question{
+    padding-top: 1rem;
+    font-family: 'Duru Sans', sans-serif;
+    font-size: 1.2rem;
+}
+.rating{
+    font-family: 'Duru Sans', sans-serif;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+
+/* button submit */
+button {
+    border-radius: 0.5rem;
+    background-color: var(--secondary);
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--tertiary);
+}
+
+/* hasil */
+#results {
+    background: var(--secondary);
+    margin-top: 20px;
+    padding: 2rem;
+    display: none;
+}
+.judulhasil{
+    padding: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+.skorhasil{
+    font-family: 'Duru Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.statushasil{
+    font-family: 'Duru Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+#span{
+    font-family: 'Duru Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* laptop */
+@media (max-width: 1366px) {
+    html{
+        font-size: 90%;
+    }
+
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 70%
+    }
+    .quiz{
+        width: 55rem;
+        border-radius: 1rem;
+        background-color: #FF9A3D;
+    }
+
+    .hars{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: var(--quaternary);
+        font-style: italic;
+    }
+    .deschars{
+        padding-top: 1rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        font-family: 'Duru Sans', sans-serif;
+        text-align: justify;
+    }
+    span{
+        color: var(--tertiary);
+        font-weight: 900;
+    }
+
+    .desctes{
+        text-align: justify;
+        padding-top: 4rem;
+        font-family: 'Duru Sans', sans-serif;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .judultes{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: var(--quaternary);
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .judulquiz{
+        padding-top: 2em;
+        padding-bottom: 0.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    .quiz{
+        width: 50rem;
+        border-radius: 1rem;
+        background-color: #FF9A3D;
+    }
+    .question{
+        padding-top: 1rem;
+        font-family: 'Duru Sans', sans-serif;
+    }
+    .rating{
+        font-family: 'Duru Sans', sans-serif;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    #results {
+        background: var(--secondary);
+        margin-top: 20px;
+        padding: 2rem;
+        display: none;
+    }
+    .judulhasil{
+        padding: 2rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+    }
+    .skorhasil{
+        font-family: 'Duru Sans', sans-serif;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    .statushasil{
+        font-family: 'Duru Sans', sans-serif;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+    }
+    #span{
+        font-family: 'Duru Sans', sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+    }
+}
+    
+/* Mobile phone */
+@media (max-width: 450px) {
+    html {
+        font-size: 50%
+    }
+    .hars{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: var(--quaternary);
+        font-style: italic;
+    }
+    .deschars{
+        padding-top: 1rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        font-family: 'Duru Sans', sans-serif;
+        text-align: justify;
+    }
+    span{
+        color: var(--tertiary);
+        font-weight: 900;
+    }
+
+    .desctes{
+        text-align: justify;
+        padding-top: 4rem;
+        font-family: 'Duru Sans', sans-serif;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .judultes{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: var(--quaternary);
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .judulquiz{
+        padding-top: 2em;
+        padding-bottom: 0.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    .quiz{
+        width: 45rem;
+        border-radius: 1rem;
+        background-color: #FF9A3D;
+    }
+    .question{
+        padding-top: 1rem;
+        font-family: 'Duru Sans', sans-serif;
+    }
+    .rating{
+        font-family: 'Duru Sans', sans-serif;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    #results {
+        background: var(--secondary);
+        margin-top: 20px;
+        padding: 2rem;
+        display: none;
+    }
+    .judulhasil{
+        padding: 2rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+    }
+    .skorhasil{
+        font-family: 'Duru Sans', sans-serif;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    .statushasil{
+        font-family: 'Duru Sans', sans-serif;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+    }
+    #span{
+        font-family: 'Duru Sans', sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+    }
+}

@@ -1,0 +1,629 @@
+:root {
+    --primary: #252D59;
+    --secondary: #64A0A5;
+    --tertiary: #86C894;
+    --black: #454545;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Duru Sans', sans-serif;
+    background-color: var(--primary);
+    color: #fff;
+    min-height: 100%;
+    width: 100%;
+    background-image: url(../img/patternbg.png);
+}
+
+#headerPopup {
+    width: 75%;
+    margin: 0 auto;
+}
+
+#headerPopup iframe {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 4%;
+    position: fixed;
+    top: 1rem;
+    left: 3rem;
+    right: 3rem;
+    background-color: var(--secondary);
+    z-index: 999999;
+    border-radius: 1rem;
+    height: 4rem;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin: 0.5rem;
+    padding-bottom: 1.5rem;
+    text-decoration: none;
+}
+
+.navbar .navbar-menu a {
+    align-items: end;
+    color: #fff;
+    display: inline-block;
+    font-size: 1rem;
+    font-family: 'Duru Sans', sans-serif;
+    font-weight: 800;
+    margin: 1.2rem;
+    padding-bottom: 1.2rem;
+    text-decoration: none;
+}
+
+.navbar .navbar-menu a:hover {
+    color: var(--primary);
+}
+
+.navbar .navbar-menu a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.2rem solid var(--primary);
+    transform: scaleX(0);
+}
+
+.navbar .navbar-menu a:hover::after {
+    transform: scaleX(0.5);
+    transition: 0.2s;
+}
+
+
+/* Hero */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(../img/meditation.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: grid;
+}
+
+.hero::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 28%;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(38, 45, 90, 1)1%, rgba(255, 255, 255, 0) 35%);
+}
+
+.hero .content h1 {
+    text-shadow: 2px 2px 4px var(--black);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    padding-top: 22rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hero .content p {
+    text-shadow: 2px 2px 4px var(--black);
+    padding: 0.8rem 8%;
+    font-family: 'Duru Sans', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+/* meditasi */
+.imgcara{
+    height:15rem;
+    width: 15rem;
+}
+
+.rowmed {
+    justify-content: center;
+    gap: 6rem;
+}
+
+.meditasitips {
+    background-color: var(--secondary);
+    padding-top: 4rem;
+    border-radius: 1rem;
+    padding-bottom: 4rem;
+}
+
+.meditasi {
+    color: var(--quaternary);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.descmeditasi {
+    font-family: 'Duru Sans', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 4rem;
+    padding-top: 1rem;
+}
+
+.carameditasi {
+    font-family: 'Duru Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+}
+
+.waktumeditasi {
+    font-family: 'Duru Sans', sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+    padding-bottom: 4rem;
+}
+
+/* button video */
+.test {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.test a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+    border-radius: 0.2rem;
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--tertiary);
+}
+
+
+
+/* musik */
+.musik {
+    color: var(--quaternary);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.descmusik {
+    color: #fff;
+    font-family: 'Duru Sans', sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+    padding-bottom: 4rem;
+    padding-top: 1rem;
+}
+
+/* card musik */
+.musikplayer{
+    justify-content: center;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    margin-left: 2.5rem;
+}
+.kartu {
+    background-color: var(--secondary);
+    border-radius: 1rem;
+}
+
+.judulmusikkartu {
+    text-align: center;
+    padding-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.descmusikkartu {
+    text-align: center;
+    font-family: 'Duru Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+/* quotes */
+.quotes {
+    font-family: 'Agbalumo';
+    font-weight: 800;
+    font-size: 3rem;
+    color: var(--quaternary);
+}
+
+.descquotes {
+    padding-top: 1rem;
+    font-family: 'Duru Sans', sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.swiper {
+    border-radius: 0.5rem;
+    width: 30rem;
+    height: 10.5rem;
+}
+
+.swiper-slide {
+    padding: 2.2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    color: #454545;
+}
+
+.swiper-slidee {
+    color: #fff;
+}
+
+.swiper-slide:nth-child(1n) {
+    background-color: #9be8d8;
+}
+
+.swiper-slide:nth-child(2n) {
+    background-color: #7ec9ba;
+}
+
+.swiper-slide:nth-child(3n) {
+    background-color: #9be8d8;
+}
+
+.swiper-slide:nth-child(4n) {
+    background-color: #7ec9ba;
+}
+
+.swiper-slide:nth-child(5n) {
+    background-color: #9be8d8;
+}
+
+.swiper-slide:nth-child(6n) {
+    background-color: #7ec9ba;
+}
+
+.swiper-slide:nth-child(7n) {
+    background-color: #9be8d8;
+}
+
+.swiper-slide:nth-child(8n) {
+    background-color: #7ec9ba;
+}
+
+.swiper-slide:nth-child(9n) {
+    background-color: #9be8d8;
+}
+
+.swiper-slide:nth-child(10n) {
+    background-color: #7ec9ba;
+}
+
+
+/* footer */
+.judulfooter {
+    padding-top: 1rem;
+    color: var(--quaternary);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.descfooter {
+    font-family: 'Duru Sans', sans-serif;
+    font-size: 1rem;
+}
+
+
+/* laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 90%;
+    }
+
+    .hero .content h1 {
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 40rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .hero .content p {
+        padding: 0.8rem 8%;
+        font-family: 'Duru Sans', sans-serif;
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    .gejala {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        padding: 2rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .desc {
+        text-align: justify;
+        font-weight: 500;
+        padding: 2rem;
+        padding-top: 0;
+    }
+
+    .judulmusikkartu {
+        font-size: 2rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        color: #fff;
+    }
+    .descmusikkartu {
+        font-size: 1rem;
+        font-family: 'Duru Sans', sans-serif;
+        font-weight: 600;
+        color: var(--primary);
+    }
+    .musikplayer{
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        margin-left: 1rem;
+    }
+
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 60%;
+    }
+
+    .hero .content h1 {
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 50rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .hero .content p {
+        padding: 0.8rem 8%;
+        font-family: 'Duru Sans', sans-serif;
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    .gejala {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        padding: 2rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .desc {
+        text-align: justify;
+        font-weight: 500;
+        padding: 2rem;
+        padding-top: 0;
+    }
+
+    .descmeditasi {
+        font-family: 'Duru Sans', sans-serif;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        text-align: justify;
+        padding-bottom: 4rem;
+        padding-top: 2rem;
+    }
+
+    .rowmed {
+        justify-content: center;
+        gap: 6rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .carameditasi {
+        font-family: 'Duru Sans', sans-serif;
+        font-weight: 600;
+        font-size: 2rem;
+        padding-bottom: 0.5rem;
+        padding-top: 2rem;
+    }
+    .meditasitips {
+        font-size: 1.2rem;
+        background-color: var(--secondary);
+        padding-top: 4rem;
+        border-radius: 1rem;
+        padding-bottom: 8rem;
+    }
+    .desccara {
+        font-size: 1.7rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .imgcara{
+        height: 18rem;
+        width: 18rem;
+    }
+
+    .musik {
+        color: var(--quaternary);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 3rem;
+        text-align: center;
+        padding: 2rem;
+    }
+    .descmusik {
+        color: #fff;
+        font-family: 'Duru Sans', sans-serif;
+        text-align: justify;
+        font-size: 1.2rem;
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
+        padding-bottom: 4rem;
+        padding-top: 1rem;
+    }
+      
+    .judulmusikkartu {
+        font-size: 3rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        color: #fff;
+    }
+    .descmusikkartu {
+        font-size: 1.5rem;
+        font-family: 'Duru Sans', sans-serif;
+        font-weight: 600;
+        color: var(--primary);
+    }
+    .musikplayer{
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        margin-left: 11rem;
+    }
+
+    
+}
+
+/* Mobile phone */
+@media (max-width: 450px) {
+    html {
+        font-size: 65%;
+    }
+
+    .hero .content h1 {
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 50rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .hero .content p {
+        padding: 0.8rem 8%;
+        font-family: 'Duru Sans', sans-serif;
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    .gejala {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        padding: 2rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .desc {
+        text-align: justify;
+        font-weight: 500;
+        padding: 2rem;
+        padding-top: 0;
+    }
+
+    .descmeditasi {
+        font-family: 'Duru Sans', sans-serif;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        text-align: justify;
+        padding-bottom: 4rem;
+        padding-top: 2rem;
+    }
+
+    .rowmed {
+        justify-content: center;
+        gap: 4rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .carameditasi {
+        font-family: 'Duru Sans', sans-serif;
+        font-weight: 600;
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+        padding-top: 2rem;
+    }
+    .meditasitips {
+        font-size: 1.2rem;
+        background-color: var(--secondary);
+        padding-top: 4rem;
+        border-radius: 1rem;
+        padding-bottom: 8rem;
+    }
+    .desccara {
+        font-size: 1.2rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .imgcara{
+        height: 22rem;
+        width: 22rem;
+    }
+
+    .musik {
+        color: var(--quaternary);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 3rem;
+        text-align: center;
+        padding: 2rem;
+    }
+    .descmusik {
+        color: #fff;
+        font-family: 'Duru Sans', sans-serif;
+        text-align: justify;
+        font-size: 1.2rem;
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
+        padding-bottom: 4rem;
+        padding-top: 1rem;
+    }
+      
+    .judulmusikkartu {
+        font-size: 3rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        color: #fff;
+    }
+    .descmusikkartu {
+        font-size: 1.5rem;
+        font-family: 'Duru Sans', sans-serif;
+        font-weight: 600;
+        color: var(--primary);
+    }
+    .musikplayer{
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        margin-left: 4.5rem;
+    }
+}

@@ -1,0 +1,197 @@
+:root {
+    --primary:#252D59;
+    --secondary: #64A0A5;
+    --tertiary : #86C894;
+    --black: #454545;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Duru Sans', sans-serif;
+    background-color: var(--primary);
+    color: #fff;
+    min-height: 100%;
+    width: 100%;
+}
+
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 4%;
+    position: fixed;
+    top: 1rem;
+    left: 3rem;
+    right: 3rem;
+    background-color: var(--primary);
+    z-index: 999999;
+    border-radius: 1rem;
+    height: 4rem;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin: 0.5rem;
+    padding-bottom: 1.5rem;
+    text-decoration: none;
+}
+
+.navbar .navbar-menu a {
+    align-items: end;
+    color: #fff;
+    display: inline-block;
+    font-size: 1rem;
+    font-family: 'Duru Sans', sans-serif;
+    font-weight: 800;
+    margin: 1.2rem;
+    padding-bottom: 1.2rem;
+    text-decoration: none;
+}
+
+.navbar .navbar-menu a:hover {
+    color: var(--secondary)
+}
+
+.navbar .navbar-menu a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.2rem solid var(--secondary);
+    transform: scaleX(0);
+}
+
+.navbar .navbar-menu a:hover::after {
+    transform: scaleX(0.5);
+    transition: 0.2s;
+}
+
+
+/* Hero */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: grid;
+    background-image: url(../img/Home.jpg);
+}
+.hero .content h1 {
+    text-shadow: 2px 2px 4px var(--black);
+    font-family: 'Kanit', sans-serif;
+    font-size: 4rem;
+    padding-top: 25rem;
+    text-align: center;
+}
+
+.hero .content p {
+    text-shadow: 2px 2px 4px var(--black);
+    padding: 0.2rem 8%;
+    font-family: 'Duru Sans', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+/* button */
+.test{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.test a{
+    text-decoration: none;
+    color: #fff;
+}
+button {
+    border-radius: 0.5rem;
+    background-color: var(--secondary);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 10rem;
+}
+button:hover{
+    background-color: var(--tertiary);
+
+}
+
+
+
+/* laptop */
+@media (max-width: 1366px) {
+    html{
+        font-size: 80%;
+    }
+    .hero .content h1 {
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 40rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .hero .content p {
+        padding: 0.2rem 8%;
+        font-family: 'Duru Sans', sans-serif;
+        text-align: center;
+        line-height: 2rem;
+    } 
+}
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 60%;
+    }
+
+    .hero .content h1 {
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 45rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .hero .content p {
+        padding: 0.2rem 8%;
+        font-family: 'Duru Sans', sans-serif;
+        text-align: center;
+        line-height: 2rem;
+    } 
+}
+/* Mobile phone */
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .hero .content h1 {
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 50rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .hero .content p {
+        padding: 0.2rem 8%;
+        font-family: 'Duru Sans', sans-serif;
+        text-align: center;
+        line-height: 2rem;
+    }
+}

@@ -1,0 +1,595 @@
+:root {
+    --primary:#252D59;
+    --secondary: #64A0A5;
+    --tertiary : #86C894;
+    --black: #454545;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Duru Sans', sans-serif;
+    background-color: var(--primary);
+    color: #fff;
+    min-height: 100%;
+    width: 100%;
+    background-image: url(../img/patternbg.png);
+}
+
+#headerPopup{
+    width:100%;
+    margin:0 auto;
+  }
+  
+  #headerPopup iframe{
+    width:100%;
+    margin:0 auto;
+  }
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 4%;
+    position: fixed;
+    top: 1rem;
+    left: 3rem;
+    right: 3rem;
+    background-color: var(--secondary);
+    z-index: 999999;
+    border-radius: 1rem;
+    height: 4rem;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin: 0.5rem;
+    padding-bottom: 1.5rem;
+    text-decoration: none;
+}
+
+.navbar .navbar-menu a {
+    align-items: end;
+    color: #fff;
+    display: inline-block;
+    font-size: 1rem;
+    font-family: 'Duru Sans', sans-serif;
+    font-weight: 800;
+    margin: 1.2rem;
+    padding-bottom: 1.2rem;
+    text-decoration: none;
+}
+
+.navbar .navbar-menu a:hover {
+    color: var(--primary);
+}
+
+.navbar .navbar-menu a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.2rem solid var(--primary);
+    transform: scaleX(0);
+}
+
+.navbar .navbar-menu a:hover::after {
+    transform: scaleX(0.5);
+    transition: 0.2s;
+}
+
+
+
+
+/* Anxie penjelasan */
+.anxie {
+    color: var(--quaternary);
+    padding-top: 6rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.anxie2 {
+    font-family: 'Duru Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.anxie3 {
+    font-family: 'Duru Sans', sans-serif;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+#more{
+	display: none;
+}
+.readmore{
+	background-color: transparent;
+	color: #fff;
+    padding-bottom: 5rem;
+}
+.readmore:hover{
+    background-color: transparent;
+}
+
+/* gejala */
+.ilusgejala{
+    padding-top: 6rem;
+    align-items: center;
+}
+.imggejala{
+    height: 500px; 
+    width: 500px;
+}
+.gejala{
+    background-color: #fff;
+}
+.gejala1{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 3rem;
+	font-weight: 700;
+    color: var(--primary);
+	padding: 2rem;
+    padding-top: 10rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.desc1{
+    font-family: 'Duru Sans', sans-serif;
+    font-size: 1.5;
+    font-weight: 500;
+    color: var(--black);
+	text-align: justify;
+	padding: 2rem;
+    padding-bottom: 9rem;
+}
+
+
+/* gejala unicef */
+.gejala2{
+	background-color: #fff;
+    margin: 10rem;
+    border-radius: 1rem;
+}
+.gejaladetail{
+    text-align: center;
+    color: var(--black);
+	font-family: 'Montserrat', sans-serif;
+    padding-top: 1rem;
+	font-size: 1.8rem;
+    font-weight: 600;
+}
+.Fisik,.Emosional{
+    color: var(--black);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5rem;
+    font-weight: 600;
+}
+.descgejala{
+    color: var(--black);
+    line-height: 2rem;
+    padding-top: 1rem;
+	font-size: 1.2rem;
+    
+}
+.feather {
+    color: var(--black);
+    width: 70px;
+    height: 70px;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+  }
+
+/* pengobatan*/
+.imgobat{
+    height: 25rem; 
+    width: 25rem;
+    border-radius: 1rem;
+}
+.pengobatancover{
+    background-color: #fff;
+    padding-bottom: 3rem;
+}
+.obat{
+    border: 1rem;
+}
+.pengobatan{
+    color: var(--primary);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 6rem;
+}
+.descpengobatan{
+    font-family: 'Duru Sans', sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+    padding-bottom: 4rem;
+    padding-top: 1rem;
+    color: var(--black);
+}
+.judulobat{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    color: var(--primary);
+}
+.descobat{
+    font-size: 1rem;
+    text-align: justify;
+    font-family: 'Duru Sans', sans-serif;
+    color: var(--black);
+}
+
+
+/* test anxiety */
+.tesanxie{
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+.judultest{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 8rem;
+    padding-left:  5rem;
+}
+.desctest{
+    font-family: 'Duru Sans', sans-serif;
+    font-size: 1rem;
+    padding-left:  5rem;
+    padding-right: 5rem;
+}
+.test{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 5rem;
+}
+.test a{
+    text-decoration: none;
+    color: #fff;
+}
+button {
+    border-radius: 0.2rem;
+    background-color: var(--secondary);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--tertiary);
+
+}
+
+
+/* footer */
+.imgtest{
+    width: 500px;
+    height: 500px;
+}
+.judulfooter{
+    padding-top: 2rem;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.descfooter{
+    font-family: 'Duru Sans', sans-serif;
+    font-size: 1rem;
+}
+
+
+/* laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 80%;
+    }
+    img{
+        height: 500px;
+        width: 500px;
+    }
+    .imggejala{
+        height: 500px; 
+        width: 500px;
+    }
+    .imgtest{
+        width: 400px;
+        height: 400px;
+    }
+    .hero .content h1 {
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 40rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    .hero .content p {
+        padding: 0.8rem 8%;
+        font-family: 'Duru Sans', sans-serif;
+        text-align: center;
+        line-height: 2rem;
+    } 
+    .gejala{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        padding: 2rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .desc{
+        text-align: justify;
+        font-weight: 500;
+        padding: 2rem;
+        padding-top: 0;
+    }
+}
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 60%;
+    }
+    .imggejala{
+        height: 300px; 
+        width: 300px;
+    }
+    .imgobat{
+        height: 25rem; 
+        width: 25rem;
+        border-radius: 1rem;
+    }
+    .imgtest{
+        width: 250px;
+        height: 250px;
+    }
+
+    .hero .content h1 {
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 50rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    .hero .content p {
+        padding: 0.8rem 8%;
+        font-family: 'Duru Sans', sans-serif;
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    .descpengobatan{
+        font-family: 'Duru Sans', sans-serif;
+        text-align: justify;
+        padding: 3rem;
+        padding-bottom: 4rem;
+        color: var(--black);
+    }
+    .judulobat{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        padding-top: 1rem;
+        color: var(--primary);
+    }
+    .descobat{
+        padding-right: 3rem;
+        text-align: justify;
+        font-family: 'Duru Sans', sans-serif;
+        color: var(--black);
+    }
+
+    .gejala{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        padding: 2rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .gejala1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--primary);
+        padding-top: 10rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }                                                                                                                                                               
+
+    .gejala2{
+        background-color: #fff;
+        margin: 5rem;
+        border-radius: 1rem;
+    }
+    .gejaladetail{
+        text-align: center;
+        color: var(--black);
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 1rem;
+        font-weight: 600;
+    }
+    .Fisik,.Emosional{
+        padding-top: 1rem;
+        color: var(--black);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+    .descgejala{
+        color: var(--black);
+        line-height: 2rem;
+        padding-top: 2rem;
+        
+    }
+    .feather {
+        color: var(--black);
+        width: 70px;
+        height: 70px;
+        stroke: currentColor;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+    }
+
+    .judultest{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        padding-left:  5rem;
+        padding-right: 2rem;
+        padding-top: 1rem;
+    }
+    .desctest{
+        font-family: 'Duru Sans', sans-serif;
+        padding-left:  5rem;
+        padding-right: 2rem;
+        margin-top: 1rem;
+    }
+    .test{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        margin-top: 1rem;
+    }
+}
+/* Mobile phone */
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    .imggejala{
+        height: 250px; 
+        width: 250px;
+    }
+    .imgobat{
+        height: 20rem; 
+        width: 20rem;
+        border-radius: 1rem;
+    }
+    .imgtest{
+        width: 250px;
+        height: 250px;
+    }
+
+    .hero .content h1 {
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 50rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    .hero .content p {
+        padding: 0.8rem 8%;
+        font-family: 'Duru Sans', sans-serif;
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    .descpengobatan{
+        font-family: 'Duru Sans', sans-serif;
+        text-align: justify;
+        padding: 3rem;
+        padding-bottom: 4rem;
+        color: var(--black);
+    }
+    .judulobat{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        padding-top: 1rem;
+        color: var(--primary);
+    }
+    .descobat{
+        padding-right: 3rem;
+        text-align: justify;
+        font-family: 'Duru Sans', sans-serif;
+        color: var(--black);
+    }
+
+    .gejala{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        padding: 2rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .gejala1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--primary);
+        padding: 2rem;
+        padding-top: 5rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .gejala2{
+        background-color: #fff;
+        margin: 5rem;
+        border-radius: 1rem;
+    }
+    .gejaladetail{
+        text-align: center;
+        color: var(--black);
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 1rem;
+        font-weight: 600;
+    }
+    .Fisik,.Emosional{
+        padding-top: 1rem;
+        color: var(--black);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+    .descgejala{
+        color: var(--black);
+        line-height: 2rem;
+        padding-top: 2rem;
+        
+    }
+    .feather {
+        color: var(--black);
+        width: 70px;
+        height: 70px;
+        stroke: currentColor;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+    }
+
+    .judultest{
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        padding-top: 3rem;
+    }
+    .desctest{
+        text-align: center;
+        font-family: 'Duru Sans', sans-serif;
+        margin-top: 1rem;
+    }
+    .test{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        margin-left: 22rem;
+        margin-top: 1rem;
+    }
+}
