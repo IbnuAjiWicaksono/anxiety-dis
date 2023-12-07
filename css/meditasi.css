@@ -563,4 +563,14 @@ button:hover {
         padding-bottom: 2rem;
         margin-left: 12rem;
     }
+    
+    @media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    .musikplayer{
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        margin-left: 8rem;
+    }
 }
