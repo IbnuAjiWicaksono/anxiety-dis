@@ -598,12 +598,12 @@ button:hover{
         margin-right: 15rem;
     }
     
-    @media (max-width: 340px) {
+    @media (max-width: 400px) {
     .test{
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         margin-top: 1rem;
-        margin-left: 15rem;
+        margin-left: 18rem;
         margin-right: 4rem;
     }
     .anxie3 {
