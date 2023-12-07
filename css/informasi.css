@@ -599,11 +599,16 @@ button:hover{
     }
     
     @media (max-width: 400px) {
+    .anxie3 {
+    font-family: 'Duru Sans', sans-serif;
+    text-align: justify;
+    font-size: 1rem;
+}
     .test{
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         margin-top: 1rem;
-        margin-left: 17rem;
+        margin-left: 24rem;
         margin-right: 15rem;
     }
 }
