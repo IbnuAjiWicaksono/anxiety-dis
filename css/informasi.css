@@ -149,11 +149,11 @@ body {
 }
 .desc1{
     font-family: 'Duru Sans', sans-serif;
-    font-size: 1.5;
+    font-size: 1.5 rem;
     font-weight: 500;
     color: var(--black);
-	text-align: justify;
-	padding: 2rem;
+    text-align: justify;
+    padding: 2rem;
     padding-bottom: 9rem;
 }
 
@@ -290,7 +290,7 @@ button:hover{
     height: 500px;
 }
 .judulfooter{
-    padding-top: 2rem;
+    padding-top: 1rem;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -299,6 +299,7 @@ button:hover{
 .descfooter{
     font-family: 'Duru Sans', sans-serif;
     font-size: 1rem;
+    padding: 2rem;
 }
 
 
