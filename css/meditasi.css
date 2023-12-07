@@ -346,80 +346,6 @@ button:hover {
     font-size: 1rem;
 }
 
-
-@media (max-width: 1024px) {
-    html {
-        font-size: 80%;
-    }
-    .judulmusikkartu {
-        text-align: center;
-        padding-top: 2rem;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 800;
-        font-size: 1.5rem;
-        color: #fff;
-    }
-    
-    .descmusikkartu {
-        text-align: center;
-        font-family: 'Duru Sans', sans-serif;
-        font-size: 1rem;
-        font-weight: 600;
-        color: var(--primary);
-    }
-    
-    .hero .content h1 {
-        font-family: 'Montserrat', sans-serif;
-        padding-top: 40rem;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .hero .content p {
-        padding: 0.8rem 8%;
-        font-family: 'Duru Sans', sans-serif;
-        text-align: center;
-        line-height: 2rem;
-    }
-
-    .gejala {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        padding: 2rem;
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
-
-    .desc {
-        text-align: justify;
-        font-weight: 500;
-        padding: 2rem;
-        padding-top: 0;
-    }
-
-    .judulmusikkartu {
-        font-size: 2rem;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 800;
-        color: #fff;
-    }
-    .descmusikkartu {
-        font-size: 1rem;
-        font-family: 'Duru Sans', sans-serif;
-        font-weight: 600;
-        color: var(--primary);
-    }
-    .musikplayer{
-        padding-top: 3rem;
-        padding-bottom: 2rem;
-        margin-left: 1rem;
-    }
-
-}
-
-/* Tablet */
-
-
 @media (max-width: 1366px) {
     html {
         font-size: 70%;
@@ -450,7 +376,7 @@ button:hover {
 
 @media (max-width: 1024px) {
     html {
-        font-size: 65%;
+        font-size: 80%;
     }
     .musikplayer{
         padding-top: 3rem;
@@ -477,7 +403,7 @@ button:hover {
 
 @media (max-width: 900px) {
     html {
-        font-size: 65%;
+        font-size: 80%;
     }
 
     .judulmusikkartu {
@@ -506,7 +432,7 @@ button:hover {
 
 @media (max-width: 768px) {
     html {
-        font-size: 60%;
+        font-size: 75%;
     }
 
     .hero .content h1 {
@@ -619,7 +545,7 @@ button:hover {
 
 @media (max-width: 600px) {
     html {
-        font-size: 50%;
+        font-size: 60%;
     }
     .musikplayer{
         padding-top: 3rem;
@@ -630,7 +556,7 @@ button:hover {
 
 @media (max-width: 500px) {
     html {
-        font-size: 45%;
+        font-size: 60%;
     }
     .musikplayer{
         padding-top: 3rem;
