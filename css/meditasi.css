@@ -346,6 +346,7 @@ button:hover {
     font-size: 1rem;
 }
 
+/* laptop */
 @media (max-width: 1366px) {
     html {
         font-size: 70%;
@@ -371,6 +372,11 @@ button:hover {
         font-size: 1.5rem;
         font-weight: 600;
         color: var(--primary);
+    }
+    .musikplayer{
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        margin-left: 2rem;
     }
 }
 
@@ -398,6 +404,11 @@ button:hover {
         font-size: 1.5rem;
         font-weight: 600;
         color: var(--primary);
+    }
+    .musikplayer{
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        margin-left: 24rem;
     }
 }
 
@@ -537,7 +548,7 @@ button:hover {
     .musikplayer{
         padding-top: 3rem;
         padding-bottom: 2rem;
-        margin-left: 11rem;
+        margin-left: 15rem;
     }
 
     
@@ -564,13 +575,24 @@ button:hover {
         margin-left: 12rem;
     }
     
-    @media (max-width: 450px) {
+}
+@media (max-width: 450px) {
     html {
         font-size: 50%;
     }
     .musikplayer{
         padding-top: 3rem;
         padding-bottom: 2rem;
-        margin-left: 8rem;
+        margin-left: 5rem;
+    }
+}
+@media (max-width: 370px) {
+    html {
+        font-size: 50%;
+    }
+    .musikplayer{
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        margin-left: 2rem;
     }
 }
