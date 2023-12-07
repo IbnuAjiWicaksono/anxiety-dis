@@ -274,12 +274,12 @@ button:hover {
 
 .swiper {
     border-radius: 0.5rem;
-    width: 30rem;
-    height: 10.5rem;
+    width: 35rem;
+    height: 12.5rem;
 }
 
 .swiper-slide {
-    padding: 2.2rem;
+    padding: 3rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -344,6 +344,7 @@ button:hover {
 .descfooter {
     font-family: 'Duru Sans', sans-serif;
     font-size: 1rem;
+    padding: 2rem;
 }
 
 /* laptop */
