@@ -145,7 +145,7 @@ body {
 /* Tablet */
 @media (max-width: 768px) {
     html {
-        font-size: 70%
+        font-size: 60%
     }
     .hero .content h1 {
         font-family: 'Montserrat', sans-serif;
@@ -165,7 +165,7 @@ body {
 /* Mobile phone */
 @media (max-width: 450px) {
     html {
-        font-size: 50%
+        font-size: 60%
     }
     .hero .content h1 {
         font-family: 'Montserrat', sans-serif;
