@@ -119,11 +119,54 @@ body {
 .readmore{
 	background-color: transparent;
 	color: #fff;
-    padding-bottom: 5rem;
+    padding-bottom: 0.5rem;
 }
 .readmore:hover{
     background-color: transparent;
 }
+
+/* video */
+/* meditasi */
+.imgcara{
+    height:15rem;
+    width: 15rem;
+}
+
+.rowmed {
+    justify-content: center;
+    gap: 2rem;
+}
+
+.meditasitips {
+    padding-top: 1rem;
+    border-radius: 1rem;
+    padding-bottom: 4rem;
+}
+
+.meditasi {
+    color: var(--quaternary);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.carameditasi {
+    font-family: 'Duru Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+}
+
+.waktumeditasi {
+    font-family: 'Duru Sans', sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+    padding-bottom: 4rem;
+}
+
 
 /* gejala */
 .ilusgejala{
@@ -149,11 +192,11 @@ body {
 }
 .desc1{
     font-family: 'Duru Sans', sans-serif;
-    font-size: 1.5 rem;
+    font-size: 1.2rem;
     font-weight: 500;
     color: var(--black);
-    text-align: justify;
-    padding: 2rem;
+	text-align: justify;
+	padding: 2rem;
     padding-bottom: 9rem;
 }
 
@@ -489,6 +532,12 @@ button:hover{
         height: 250px;
     }
 
+    .anxie3 {
+        font-family: 'Duru Sans', sans-serif;
+        text-align: justify;
+        font-size: 1.2rem;
+    }
+
     .hero .content h1 {
         font-family: 'Montserrat', sans-serif;
         padding-top: 50rem;
@@ -581,25 +630,24 @@ button:hover{
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         padding-top: 3rem;
-	padding-left: 3rem;
+        padding-left: 3rem;
         margin-right: 1rem;
     }
     .desctest{
         text-align: center;
         font-family: 'Duru Sans', sans-serif;
         margin-top: 1rem;
-	margin-right: 4rem;
+        margin-right: 4rem;
     }
     .test{
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
-        margin-left: 22rem;
         margin-top: 1rem;
-	margin-left: 20rem;
+        margin-left: 20rem;
         margin-right: 15rem;
     }
-    
-    @media (max-width: 400px) {
+}
+@media (max-width: 400px) {
     .test{
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
@@ -613,7 +661,8 @@ button:hover{
         font-size: 1.2rem;
     }
 }
-	@media (max-width: 370px) {
+
+@media (max-width: 370px) {
         .test{
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
